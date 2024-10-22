@@ -1,0 +1,21 @@
+// gradients
+// .bg__gradient_red {
+// 	background: linear-gradient(98deg, #e42037 32.1%, #a70a1c 70.36%);
+// }
+// .backdrop-blur-effect {
+// 	backdrop-filter: blur(10px);
+// 	-webkit-backdrop-filter: blur(10px); /* Для підтримки Safari */
+// }
+// .bg_blur {
+// 	&::before {
+// 		background: url('@img/Ellipse_2.png') center center/cover no-repeat;
+// 	}
+// }
+// .bg_blur-contain {
+// 	&::before {
+// 		background: url('@img/Ellipse_2.png') center center/contain no-repeat;
+// 	}
+// }
+.transition-transform {
+	transition: transform 0.35s linear;
+}

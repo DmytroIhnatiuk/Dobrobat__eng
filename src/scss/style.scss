@@ -1,0 +1,92 @@
+@use 'sass:math';
+@import 'tailwind';
+@import 'base';
+@import 'fonts';
+@import 'global';
+@import 'helpers';
+@import 'components';
+
+.swiper-pagination-total {
+	font-size: 0.18rem;
+	font-weight: 600;
+}
+
+.marquee {
+	overflow: hidden;
+	white-space: nowrap;
+	box-sizing: border-box;
+}
+
+.running-text {
+	display: inline-block;
+	padding-right: 100%; /* Проміжок для безперервності */
+	animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}
+.promo {
+	width: 100vw;
+	height: auto;
+	background: url('@img/main-frame_bg.png') center center/cover no-repeat;
+	position: relative;
+	&::before {
+		content: '';
+		position: absolute;
+		background: url('@img/main-frame_decor.png') center center/cover no-repeat;
+		width: 4.4rem;
+		height: 3.9rem;
+		right: -50%;
+		bottom: 0.6rem;
+		@media all and (min-width: 640px) {
+			right: -0.1rem;
+		}
+		@media all and (min-width: 1024px) {
+			right: -0.1rem;
+			width: 6.4rem;
+			height: 5.3rem;
+			top: 50%;
+			bottom: auto;
+			transform: translateY(-50%);
+		}
+	}
+	@media all and (min-width: 1024px) {
+		height: 100vh;
+	}
+}
+
+.bg-blur {
+	position: relative;
+	div {
+		position: relative;
+		z-index: 5;
+	}
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: rgba(255, 255, 255, 0.2);
+		backdrop-filter: blur(gem(5));
+		-webkit-backface-visibility: hidden;
+		-webkit-perspective: 1000;
+		transform: translate(0) translate3d(0, 0, 0) translateZ(0);
+	}
+}
+.box-shadow {
+	box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.1);
+}
+.ukr-businesses {
+	background: url('@img/main-frame_bg.png') center center/cover no-repeat;
+}
+.transit-filter {
+	transition: filter 0.35s linear;
+}

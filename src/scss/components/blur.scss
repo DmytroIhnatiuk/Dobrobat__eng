@@ -1,0 +1,25 @@
+.blur {
+	&-round {
+		display: block;
+		&::before {
+			content: '';
+			position: absolute;
+			border-radius: 50%;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background-color: rgba(255, 217, 0, 0.5);
+			filter: blur(0.75rem);
+			-webkit-filter: blur(0.75rem);
+			-webkit-backface-visibility: hidden;
+			-webkit-perspective: 1000;
+			transform: translate3d(0, 0, 0);
+
+			@media all and (min-width: 1024px) {
+				filter: blur(1.5rem);
+				-webkit-filter: blur(1.5rem);
+			}
+		}
+	}
+}

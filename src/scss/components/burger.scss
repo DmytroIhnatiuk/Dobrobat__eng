@@ -1,0 +1,18 @@
+.burger {
+	z-index: 110;
+	.close {
+		opacity: 0;
+	}
+	.open {
+		transition: opacity 0.35s linear s;
+	}
+	&.active {
+		.close {
+			opacity: 1;
+			transition: opacity 0.35s linear 0.35s;
+		}
+		.open {
+			opacity: 0;
+		}
+	}
+}

@@ -1,0 +1,58 @@
+header {
+	position: fixed;
+	min-width: 100vw;
+	height: var(--header-height);
+	z-index: 100;
+	transition: transform 0.35s linear;
+	@media all and (max-width: 1023.9px) {
+	}
+	&.fixed {
+		background-color: var(--yellow);
+	}
+}
+.header-hidden {
+	transform: translateY(-100%);
+}
+
+.menu {
+	@media all and (max-width: 1023.9px) {
+		padding: 1.05rem 0;
+		color: var(--white);
+		position: absolute;
+		top: 0;
+		right: 0;
+		transform: translateX(100%);
+		width: 3.44rem;
+		height: 6.05rem;
+		background: var(--black);
+		z-index: 100;
+		transition: transform 0.35s linear;
+		&.active {
+			transform: translateX(0);
+		}
+		&-link {
+			position: relative;
+			&::before {
+				content: '';
+				position: absolute;
+				top: -0.3rem;
+				right: -0.05rem;
+				left: -0.25rem;
+				bottom: -0.3rem;
+				background: url('@img/menu-elipse.png') center center/cover no-repeat;
+				z-index: -5;
+				opacity: 0;
+				visibility: hidden;
+				transition:
+					opacity,
+					visibility 0.35s linear;
+			}
+			&.active {
+				&::before {
+					opacity: 1;
+					visibility: visible;
+				}
+			}
+		}
+	}
+}
