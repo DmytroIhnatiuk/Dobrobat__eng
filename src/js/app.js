@@ -11,10 +11,14 @@ import { Autoplay, Navigation, Pagination } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
+import 'swiper/css/effect-cards'
 import {
 	ukrainianBusinesses,
 	results,
 	internationalLegion,
+	news,
+	partnersCards,
+	members,
 } from './modules/sliders.js'
 import HeaderComponent from './modules/HeaderComponent.js'
 
@@ -34,6 +38,7 @@ flsFunctions.fullVHfix()
 // Документація плагіна: https://github.com/verlok/vanilla-lazyload
 // Сніппет(HTML):
 // import './files/scroll/lazyload.js';
+
 accordion('.accordion', '.accordion__header', '.accordion__content')
 
 accordion('.accordion-tab', '.accordion__header', '.accordion__content')
@@ -47,7 +52,20 @@ window.addEventListener('DOMContentLoaded', () => {
 		headerFixed()
 		burger()
 		internationalLegion()
+		partnersCards()
+		news()
+		members()
 	} catch (e) {
 		console.log(e)
 	}
+})
+
+import Marquee from 'vanilla-marquee'
+
+document.querySelectorAll('.marquee').forEach(element => {
+	new Marquee(element, {
+		duplicated: true,
+		gap: 0,
+		speed: 100,
+	})
 })

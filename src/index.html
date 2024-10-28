@@ -2,10 +2,43 @@
 <html lang="en">
 	@@include('html/_head.html',{ "title":"dobrobat" })
 	<body>
+		<!-- <div
+			class="absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 w-[12.97rem] modal px-[.9rem] py-[.72rem] rounded-10 overflow-hidden box-shadow"
+		>
+			<h2 class="h3 max-w-[8rem] mb-16">
+				<span class="text-white"> Fill out the form</span> and send an
+				application to find out the details of cooperation
+			</h2>
+			<div class="border-t-1 border-solid">
+				<form
+					class="pt-24 max-w-[6.9rem] lg:grid grid-cols-2 gap-x-20 gap-y-12"
+					action="#"
+				>
+					<div class="flex flex-col">
+						<label for="name" class="text-s mb-4"> Name</label>
+						<input
+							type="text"
+							name="name"
+							id="name"
+							class="text-l h-[.48rem] rounded-10 border-1 border-solid bg-transparent p-10 flex items-center"
+						/>
+					</div>
+					<div class="flex flex-col">
+						<label for="telephone" class="text-s mb-4"> Telephone number</label>
+						<input
+							type="text"
+							name="name"
+							id="telephone"
+							class="text-l h-[.48rem] rounded-10 border-1 border-solid bg-transparent p-10 flex items-center"
+						/>
+					</div>
+				</form>
+			</div>
+		</div> -->
 		<div class="page-container">
 			@@include('html/_header.html',{})
 			<main>
-				<section class="promo pt-[1.20rem] pb-[1.5rem] lg:p-0">
+				<section class="promo pt-[1.20rem] pb-[1.5rem] lg:p-0 relative">
 					<div class="container h-full lg:flex lg:items-center">
 						<div class="sm:w-[6.6rem]">
 							<h1 class="h1 mb-12 sm:mb-16">
@@ -45,6 +78,12 @@
 										<div class="text-l font-medium">volunteers worked</div>
 									</div>
 								</div>
+							</div>
+							<div
+								class="marquee text-row text-row_white absolute left-0 right-0 bottom-40 h-max"
+							>
+								reconstruction / rebuilding / recovery / reconstruction /
+								rebuilding / recovery /
 							</div>
 						</div>
 					</div>
@@ -412,6 +451,136 @@
 						</div>
 					</div>
 				</section>
+
+				<section class="relative sm:pt-[1.75rem] pt-[1.35rem]">
+					<div class="text-row marquee absolute right-0 left-0 top-0">
+						reconstruction / rebuilding / recovery / reconstruction / rebuilding
+						/ recovery /
+					</div>
+					<span
+						class="absolute blur-round size-[2.5rem] sm:size-[5.2rem] top-50 -left-[.7rem] sm:-left-[2.5rem] -z-10"
+					></span>
+					<div class="container">
+						<div class="lg:grid lg:grid-cols-2 gap-32 min-w-0">
+							<h2 class="h3 mb-32">
+								Small steps to a
+								<span class="text-yellow">big goal! Become a part</span> of a
+								great cause and help rebuild Ukraine!
+							</h2>
+							<div class="w-full">
+								<div class="swiper mb-40" data-swiper="partnersCards">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide box-shadow rounded-10 max-w-max">
+											<div
+												class="px-16 py-32 sm:p-40 bg-white rounded-10 lg:w-[5.8rem] overflow-hidden"
+											>
+												<div
+													class="h-[.66rem] sm:h-[.86rem] w-max p-8 border-grey border border-solid rounded-10 mb-16"
+												>
+													<img
+														class="size-full"
+														src="@img/evrazia.png"
+														alt="logo"
+													/>
+												</div>
+												<div class="font-semibold uppercase mb-4">About:</div>
+												<div class="mb-16">
+													Eurasia is a chain of restaurants serving Japanese and
+													European cuisine in Kyiv. Available since May 2022
+												</div>
+												<div class="sm:text-l font-medium">
+													The restaurant donates 20% of each order to the needs
+													of Dobrobat Ukraine
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide box-shadow rounded-10 max-w-max">
+											<div
+												class="px-16 py-32 sm:p-40 bg-white rounded-10 lg:w-[5.8rem] overflow-hidden"
+											>
+												<div
+													class="h-[.66rem] sm:h-[.86rem] w-max p-8 border-grey border border-solid rounded-10 mb-16"
+												>
+													<img
+														class="size-full"
+														src="@img/evrazia.png"
+														alt="logo"
+													/>
+												</div>
+												<div class="font-semibold uppercase mb-4">About:</div>
+												<div class="mb-16">
+													Eurasia is a chain of restaurants serving Japanese and
+													European cuisine in Kyiv. Available since May 2022
+												</div>
+												<div class="sm:text-l font-medium">
+													The restaurant donates 20% of each order to the needs
+													of Dobrobat Ukraine
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide box-shadow rounded-10 max-w-max">
+											<div
+												class="px-16 py-32 sm:p-40 bg-white rounded-10 lg:w-[5.8rem] overflow-hidden"
+											>
+												<div
+													class="h-[.66rem] sm:h-[.86rem] w-max p-8 border-grey border border-solid rounded-10 mb-16"
+												>
+													<img
+														class="size-full"
+														src="@img/evrazia.png"
+														alt="logo"
+													/>
+												</div>
+												<div class="font-semibold uppercase mb-4">About:</div>
+												<div class="mb-16">
+													Eurasia is a chain of restaurants serving Japanese and
+													European cuisine in Kyiv. Available since May 2022
+												</div>
+												<div class="sm:text-l font-medium">
+													The restaurant donates 20% of each order to the needs
+													of Dobrobat Ukraine
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide box-shadow rounded-10 max-w-max">
+											<div
+												class="px-16 py-32 sm:p-40 bg-white rounded-10 lg:w-[5.8rem] overflow-hidden"
+											>
+												<div
+													class="h-[.66rem] sm:h-[.86rem] w-max p-8 border-grey border border-solid rounded-10 mb-16"
+												>
+													<img
+														class="size-full"
+														src="@img/evrazia.png"
+														alt="logo"
+													/>
+												</div>
+												<div class="font-semibold uppercase mb-4">About:</div>
+												<div class="mb-16">
+													Eurasia is a chain of restaurants serving Japanese and
+													European cuisine in Kyiv. Available since May 2022
+												</div>
+												<div class="sm:text-l font-medium">
+													The restaurant donates 20% of each order to the needs
+													of Dobrobat Ukraine
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="flex items-center ml-auto w-max mr-36">
+									<div
+										class="btn-nav relative rotate-180 mr-20 partnersFlip-prev"
+									></div>
+									<div class="btn-nav relative partnersFlip-next mr-40"></div>
+									<div
+										class="partnersFlip-pagination w-max max-w-max text-[.24rem] font-bold -tracking-[.03rem]"
+									></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
 				<section>
 					<div class="container">
 						<div class="lg:grid lg:grid-cols-2 lg:gap-24 mb-16 lg:mb-50">
@@ -537,26 +706,309 @@
 					</div>
 				</section>
 				<section>
+					<div class="container relative">
+						<div
+							class="swiper box-shadow rounded-10 members bg-white mb-26 lg:mb-0"
+							data-swiper="members"
+						>
+							<div class="swiper-wrapper h-full">
+								<div class="swiper-slide h-auto">
+									<div
+										class="member rounded-10 px-24 pt-50 sm:pt-[.65rem] sm:pr-[.65rem] lg:pb-[1.5rem] sm:pl-[.85rem] lg:h-[6.5rem] overflow-hidden relative lg:justify-between bg-white lg:bg-transparent h-full flex lg:flex-row flex-col justify-between"
+									>
+										<span
+											class="absolute blur-round w-[.96rem] h-[4.51rem] sm:w-[2.5rem] sm:h-[8.3rem] -bottom-[.8rem] sm:-bottom-[2rem] right-1/2 translate-x-1/2 -rotate-[135deg] member-decoration lg:opacity-0"
+										></span>
+										<div class="size-full lg:flex justify-between">
+											<h2
+												class="uppercase max-w-[4.5rem] lg:opacity-0 member-header mb-32"
+											>
+												board members <span class="text-yellow">about us</span>
+											</h2>
+											<div
+												class="lg:w-[3.5rem] self-end lg:opacity-0 member-description"
+											>
+												<h3 class="mb-12 sm:mb-16">Volodymyr Kreidenko</h3>
+												<div class="mb-16 sm:mb-24">
+													Lorem ipsum dolor sit amet consectetur adipisicing
+													elit. Praesentium incidunt facere rem minus
+													consequuntur
+												</div>
+												<div class="text-l font-medium">
+													re ipsum temporibus necessitatibus cumque deleniti
+													iste!
+												</div>
+											</div>
+										</div>
+										<div
+											class="object-cover lg:absolute w-full h-[3.45rem] lg:w-[5.5rem] sm:h-[5.9rem] lg:-translate-x-1/2 lg:bottom-0 lg:left-1/2 member-img relative lg:opacity-0"
+										>
+											<img
+												class="absolute bottom-0"
+												src="@img/2.png"
+												alt="member"
+											/>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide h-auto">
+									<div
+										class="member rounded-10 px-24 pt-50 sm:pt-[.65rem] sm:pr-[.65rem] lg:pb-[1.5rem] sm:pl-[.85rem] lg:h-[6.5rem] overflow-hidden relative lg:justify-between bg-white lg:bg-transparent h-full flex lg:flex-row flex-col justify-between"
+									>
+										<span
+											class="absolute blur-round w-[.96rem] h-[4.51rem] sm:w-[2.5rem] sm:h-[8.3rem] -bottom-[.8rem] sm:-bottom-[2rem] right-1/2 translate-x-1/2 -rotate-[135deg] member-decoration lg:opacity-0"
+										></span>
+										<div class="size-full lg:flex justify-between">
+											<h2
+												class="uppercase max-w-[4.5rem] lg:opacity-0 member-header mb-32"
+											>
+												board members <span class="text-yellow">about us</span>
+											</h2>
+											<div
+												class="lg:w-[3.5rem] self-end lg:opacity-0 member-description"
+											>
+												<h3 class="mb-12 sm:mb-16">Volodymyr Kreidenko</h3>
+												<div class="mb-16 sm:mb-24">
+													Lorem ipsum dolor sit amet consectetur adipisicing
+													elit. Praesentium incidunt facere rem minus
+													consequuntur
+												</div>
+												<div class="text-l font-medium">
+													re ipsum temporibus necessitatibus cumque deleniti
+													iste!
+												</div>
+											</div>
+										</div>
+										<div
+											class="object-cover lg:absolute w-full h-[3.45rem] lg:w-[5.5rem] sm:h-[5.9rem] lg:-translate-x-1/2 lg:bottom-0 lg:left-1/2 member-img relative lg:opacity-0"
+										>
+											<img
+												class="absolute bottom-0"
+												src="@img/1.png"
+												alt="member"
+											/>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide h-auto">
+									<div
+										class="member rounded-10 px-24 pt-50 sm:pt-[.65rem] sm:pr-[.65rem] lg:pb-[1.5rem] sm:pl-[.85rem] lg:h-[6.5rem] overflow-hidden relative lg:justify-between bg-white lg:bg-transparent h-full flex lg:flex-row flex-col justify-between"
+									>
+										<span
+											class="absolute blur-round w-[.96rem] h-[4.51rem] sm:w-[2.5rem] sm:h-[8.3rem] -bottom-[.8rem] sm:-bottom-[2rem] right-1/2 translate-x-1/2 -rotate-[135deg] member-decoration lg:opacity-0"
+										></span>
+										<div class="size-full lg:flex justify-between">
+											<h2
+												class="uppercase max-w-[4.5rem] lg:opacity-0 member-header mb-32"
+											>
+												board members <span class="text-yellow">about us</span>
+											</h2>
+											<div
+												class="lg:w-[3.5rem] self-end lg:opacity-0 member-description"
+											>
+												<h3 class="mb-12 sm:mb-16">Volodymyr Kreidenko</h3>
+												<div class="mb-16 sm:mb-24">
+													Lorem ipsum dolor sit amet consectetur adipisicing
+													elit. Praesentium incidunt facere rem minus
+													consequuntur elit. Praesentium incidunt facere rem
+													minus consequuntur
+												</div>
+												<div class="text-l font-medium">
+													re ipsum temporibus necessitatibus cumque deleniti
+													iste! re ipsum temporibus necessitatibus cumque
+													deleniti iste!
+												</div>
+											</div>
+										</div>
+										<div
+											class="object-cover lg:absolute w-full h-[3.45rem] lg:w-[5.5rem] sm:h-[5.9rem] lg:-translate-x-1/2 lg:bottom-0 lg:left-1/2 member-img relative lg:opacity-0"
+										>
+											<img
+												class="absolute bottom-0"
+												src="@img/smirnov_2.png"
+												alt="member"
+											/>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div
+							class="flex items-center ml-auto w-max lg:w-[3.5rem] lg:absolute lg:right-[1.35rem] lg:bottom-[.55rem] z-20"
+						>
+							<div class="btn-nav relative rotate-180 mr-20 members-prev"></div>
+							<div class="btn-nav relative members-next mr-40"></div>
+							<div
+								class="members-pagination w-max max-w-max text-[.24rem] font-bold -tracking-[.03rem]"
+							></div>
+						</div>
+					</div>
+				</section>
+				<section>
 					<div class="container">
 						<h2 class="uppercase mb-24 sm:mb-50">WRITING ABOUT US</h2>
 						<div
-							class="grid sm:grid-cols-3 lg:grid-cols-5 sm:gap-[.55rem] items-center justify-center"
+							class="flex gap-24 items-center flex-wrap justify-center lg:justify-between mb-40 lg:mb-[0.8rem]"
 						>
-							<div class="h-full max-h-[.53rem] sm:max-h-[.82rem] flef">
-								<img src="@img/Reuters.png" alt=" logo" />
+							<div class="h-[.53rem] sm:h-[.74rem]">
+								<img
+									class="h-full object-contain"
+									src="@img/Reuters.png"
+									alt=" logo"
+								/>
 							</div>
-							<div class="max-w-max w-full h-full">
-								<img src="@img/Voice.png" alt="logo" />
+
+							<div class="h-[.53rem] sm:h-[.74rem]">
+								<img
+									class="h-full object-contain"
+									src="@img/Voice.png"
+									alt="logo"
+								/>
 							</div>
-							<div class="max-w-max w-full h-full">
-								<img src="@img/Aljazeera.png" alt="logo" />
+
+							<div class="h-[.53rem] sm:h-[.74rem]">
+								<img
+									class="h-full object-contain"
+									src="@img/Aljazeera.png"
+									alt="logo"
+								/>
 							</div>
-							<div class="max-w-max w-full h-full">
-								<img src="@img/Deutsche.png" alt="logo" />
+							<div class="h-[.53rem] sm:h-[.74rem]">
+								<img
+									class="h-full object-contain"
+									src="@img/Deutsche.png"
+									alt="logo"
+								/>
 							</div>
-							<div class="max-w-max w-full h-full">
-								<img src="@img/Reuters.png" alt="logo" />
+							<div class="h-[.53rem] sm:h-[.74rem]">
+								<img
+									class="h-full object-contain"
+									src="@img/BBC.png"
+									alt="logo"
+								/>
 							</div>
+						</div>
+						<!-- <div
+							class="grid grid-cols-[repeat(auto-fill)] gap-12 sm:gap-[.55rem] h-max justify-center"
+						></div> -->
+
+						<div class="swiper mb-32" data-swiper="news">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="w-[3.06rem] mx-auto">
+										<div
+											class="image w-full h-[2.02rem] rounded-10 overflow-hidden mb-12"
+										>
+											<img src="@img/press.png" alt="photo" />
+										</div>
+										<div class="h-[1.6rem] flex flex-col justify-between">
+											<div
+												class="text-l font-semibold pt-12 mb-32 border-t-1 border-grey border-solid text-clamp text-clamp_4"
+											>
+												Результати нагального відновлення та підтримка
+												медіаамбасадорів: «Добробат» звітує за тиждень.
+											</div>
+											<div class="flex items-center justify-between">
+												<div class="text-grey">Додано 25.10.2022</div>
+												<a
+													class="block text-s uppercase border-b-1 border-black border-solid font-semibold lg:hover:border-transparent"
+													href="#"
+													>Переглянути</a
+												>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="w-[3.06rem] mx-auto">
+										<div
+											class="image w-full h-[2.02rem] rounded-10 overflow-hidden mb-12"
+										>
+											<img src="@img/press.png" alt="photo" />
+										</div>
+										<div class="h-[1.6rem] flex flex-col justify-between">
+											<div
+												class="text-l font-semibold pt-12 mb-32 border-t-1 border-grey border-solid text-clamp text-clamp_4"
+											>
+												Результати нагального відновлення та підтримка
+												медіаамбасадорів: «Добробат» звітує за тиждень.
+											</div>
+											<div class="flex items-center justify-between">
+												<div class="text-grey">Додано 25.10.2022</div>
+												<a
+													class="block text-s uppercase border-b-1 border-black border-solid font-semibold lg:hover:border-transparent"
+													href="#"
+													>Переглянути</a
+												>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="w-[3.06rem] mx-auto">
+										<div
+											class="image w-full h-[2.02rem] rounded-10 overflow-hidden mb-12"
+										>
+											<img src="@img/press.png" alt="photo" />
+										</div>
+										<div class="h-[1.6rem] flex flex-col justify-between">
+											<div
+												class="text-l font-semibold pt-12 mb-32 border-t-1 border-grey border-solid text-clamp text-clamp_4"
+											>
+												Результати нагального відновлення та підтримка
+												медіаамбасадорів: «Добробат» звітує за тиждень.
+											</div>
+											<div class="flex items-center justify-between">
+												<div class="text-grey">Додано 25.10.2022</div>
+												<a
+													class="block text-s uppercase border-b-1 border-black border-solid font-semibold lg:hover:border-transparent"
+													href="#"
+													>Переглянути</a
+												>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="w-[3.06rem] mx-auto h-full">
+										<div
+											class="image w-full h-[2.02rem] rounded-10 overflow-hidden mb-12"
+										>
+											<img src="@img/press.png" alt="photo" />
+										</div>
+										<div class="h-[1.60rem] flex flex-col justify-between">
+											<div
+												class="text-l font-semibold pt-12 mb-32 border-t-1 border-grey border-solid text-clamp text-clamp_4"
+											>
+												Результати нагального відновлення та підтримка
+												медіаамбасадорів: «Добробат» звітує за тиждень.
+												Результати нагального відновлення та підтримка
+												медіаамбасадорів: «Добробат» звітує за тиждень.
+											</div>
+											<div class="flex items-center justify-between">
+												<div class="text-grey">Додано 25.10.2022</div>
+												<a
+													class="block text-s uppercase border-b-1 border-black border-solid font-semibold lg:hover:border-transparent"
+													href="#"
+													>Переглянути</a
+												>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<button
+							class="btn btn__outline h-[0.64rem] w-[3.06rem] mx-auto mb-40"
+						>
+							<span>More news</span>
+						</button>
+						<div class="flex items-center ml-auto w-max mr-36 sm:mr-0">
+							<div class="btn-nav relative rotate-180 mr-20 news-prev"></div>
+							<div class="btn-nav relative news-next mr-[.44rem]"></div>
+							<div
+								class="news-pagination w-max max-w-max text-[.24rem] font-bold -tracking-[.03rem]"
+							></div>
 						</div>
 					</div>
 				</section>

@@ -11,30 +11,36 @@
 	font-weight: 600;
 }
 
-.marquee {
+.text-row {
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: var(--soft-grey);
+	font-size: 0.24rem;
+	font-weight: 600;
+	color: transparent;
+	@media all and (min-width: 640px) {
+		font-size: 0.4rem;
+	}
+	&_white {
+		-webkit-text-stroke-color: var(--white);
+	}
+}
+
+.text-clamp {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
 	overflow: hidden;
-	white-space: nowrap;
-	box-sizing: border-box;
-}
-
-.running-text {
-	display: inline-block;
-	padding-right: 100%; /* Проміжок для безперервності */
-	animation: marquee 10s linear infinite;
-}
-
-@keyframes marquee {
-	0% {
-		transform: translateX(0);
+	&_3 {
+		-webkit-line-clamp: 3;
 	}
-	100% {
-		transform: translateX(-100%);
+	&_4 {
+		-webkit-line-clamp: 4;
 	}
 }
+
 .promo {
 	width: 100vw;
 	height: auto;
-	background: url('@img/main-frame_bg.png') center center/cover no-repeat;
+	background: url('@img/main-frame_bg.jpg') center center/cover no-repeat;
 	position: relative;
 	&::before {
 		content: '';
@@ -85,8 +91,58 @@
 	box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.1);
 }
 .ukr-businesses {
-	background: url('@img/main-frame_bg.png') center center/cover no-repeat;
+	background: url('@img/main-frame_bg.jpg') center center/cover no-repeat;
 }
 .transit-filter {
 	transition: filter 0.35s linear;
+}
+
+.members {
+	.swiper-slide {
+		min-height: 100% !important;
+		height: auto;
+	}
+}
+@media all and (min-width: 1024px) {
+	.members {
+		.member {
+			background: var(--white);
+			.member-img {
+				transition: all 0.45s linear;
+			}
+		}
+
+		.swiper-slide-prev {
+			.member-img {
+				opacity: 0.2 !important;
+				transform: translateX(-6.35rem);
+				width: 2.86rem;
+				height: 2.86rem;
+				display: block;
+				transition: all 0.45s linear;
+			}
+		}
+
+		.swiper-slide-active {
+			.member {
+				background: transparent !important;
+			}
+			.member-decoration {
+				opacity: 1;
+				transition: opacity 0.35s linear 0.35s;
+			}
+
+			.member-header {
+				opacity: 1;
+			}
+			.member-description {
+				opacity: 1;
+				transition: opacity 0.35s linear 0.45s;
+			}
+			.member-img {
+				opacity: 1;
+				display: block;
+			}
+		}
+	}
 }
