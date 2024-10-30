@@ -1,7 +1,4 @@
 .modal {
-	z-index: 100;
+	z-index: 110;
 	background: url('@img/main-frame_bg.jpg') center center/cover;
-	&::before {
-		content: '';
-	}
 }

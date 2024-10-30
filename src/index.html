@@ -2,16 +2,21 @@
 <html lang="en">
 	@@include('html/_head.html',{ "title":"dobrobat" })
 	<body>
-		<!-- <div
-			class="absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 w-[12.97rem] modal px-[.9rem] py-[.72rem] rounded-10 overflow-hidden box-shadow"
+		<div
+			class="absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 w-[90%] lg:w-[12.97rem] modal px-16 py-36 sm:px-[.9rem] sm:py-[.72rem] rounded-10 overflow-hidden box-shadow hidden"
 		>
+			<div
+				class="hidden lg:block lg:w-[4.9rem] lg:h-[4.1rem] absolute right-0 bottom-0"
+			>
+				<img src="@img/modal.png" alt="decor" />
+			</div>
 			<h2 class="h3 max-w-[8rem] mb-16">
 				<span class="text-white"> Fill out the form</span> and send an
 				application to find out the details of cooperation
 			</h2>
 			<div class="border-t-1 border-solid">
 				<form
-					class="pt-24 max-w-[6.9rem] lg:grid grid-cols-2 gap-x-20 gap-y-12"
+					class="pt-24 max-w-[6.9rem] grid lg:grid-cols-2 gap-x-20 gap-y-12"
 					action="#"
 				>
 					<div class="flex flex-col">
@@ -32,9 +37,49 @@
 							class="text-l h-[.48rem] rounded-10 border-1 border-solid bg-transparent p-10 flex items-center"
 						/>
 					</div>
+					<div class="flex flex-col">
+						<label for="email" class="text-s mb-4"> Email</label>
+						<input
+							type="text"
+							name="Email"
+							id="email"
+							class="text-l h-[.48rem] rounded-10 border-1 border-solid bg-transparent p-10 flex items-center"
+						/>
+					</div>
+					<div class="flex flex-col">
+						<label for="email_2" class="text-s mb-4"> Email</label>
+						<input
+							type="text"
+							name="Email"
+							id="email_2"
+							class="text-l h-[.48rem] rounded-10 border-1 border-solid bg-transparent p-10 flex items-center"
+						/>
+					</div>
+					<div class="flex flex-col lg:col-start-1 lg:col-end-3">
+						<label for="email_2" class="text-s mb-4"> Business niche</label>
+						<input
+							type="text"
+							name="Email"
+							id="email_2"
+							class="text-m h-[.48rem] rounded-10 border-1 border-solid bg-transparent p-10 flex items-center"
+							value="Gas stations"
+						/>
+					</div>
+					<div class="flex checkbox-item items-center">
+						<div
+							class="size-20 border-1 border-solid bg-transparent rounded-[4px] mr-8"
+						>
+							<svg class="size-full fill-transparent">
+								<use href="#check-icon"></use>
+							</svg>
+						</div>
+						<div>I agree to the processing of personal data</div>
+					</div>
+					<button class="btn btn__black"><span>send</span></button>
 				</form>
 			</div>
-		</div> -->
+		</div>
+
 		<div class="page-container">
 			@@include('html/_header.html',{})
 			<main>

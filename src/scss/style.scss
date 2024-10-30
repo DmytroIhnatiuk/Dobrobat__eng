@@ -10,7 +10,6 @@
 	font-size: 0.18rem;
 	font-weight: 600;
 }
-
 .text-row {
 	-webkit-text-stroke-width: 1px;
 	-webkit-text-stroke-color: var(--soft-grey);
@@ -24,7 +23,6 @@
 		-webkit-text-stroke-color: var(--white);
 	}
 }
-
 .text-clamp {
 	display: -webkit-box;
 	-webkit-box-orient: vertical;
@@ -36,7 +34,6 @@
 		-webkit-line-clamp: 4;
 	}
 }
-
 .promo {
 	width: 100vw;
 	height: auto;
@@ -66,7 +63,6 @@
 		height: 100vh;
 	}
 }
-
 .bg-blur {
 	position: relative;
 	div {
@@ -96,7 +92,6 @@
 .transit-filter {
 	transition: filter 0.35s linear;
 }
-
 .members {
 	.swiper-slide {
 		min-height: 100% !important;
@@ -143,6 +138,13 @@
 				opacity: 1;
 				display: block;
 			}
+		}
+	}
+}
+.checkbox-item {
+	&.active {
+		svg {
+			fill: var(--black);
 		}
 	}
 }
