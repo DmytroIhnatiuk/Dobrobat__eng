@@ -148,3 +148,17 @@
 		}
 	}
 }
+.swiper-button-disabled {
+	opacity: 0.5;
+	pointer-events: none;
+}
+@media all and (min-width: 1024px) {
+	.icons-hover {
+		&:hover {
+			color: var(--grey);
+			svg {
+				fill: var(--grey);
+			}
+		}
+	}
+}

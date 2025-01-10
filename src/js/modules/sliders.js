@@ -112,7 +112,7 @@ function partnersCards() {
 		modules: [Navigation, Pagination, EffectCards],
 		effect: 'cards',
 		grabCursor: true,
-
+		speed: 1000,
 		pagination: {
 			el: '.partnersFlip-pagination',
 			type: 'fraction',

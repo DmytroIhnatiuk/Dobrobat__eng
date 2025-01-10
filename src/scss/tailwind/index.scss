@@ -4,6 +4,6 @@
 
 @layer components {
 	.menu-link {
-		@apply mb-32 lg:mb-0 lg:mr-32 last:mr-0 border-b border-transparent border-solid hover:lg:border-black z-10 transition-[border] duration-500 ease-linear;
+		@apply mb-32 lg:mb-0 lg:mr-32 last:mr-0 border-b border-transparent border-solid hover:lg:border-black z-10 transition-[border] duration-300 ease-linear;
 	}
 }

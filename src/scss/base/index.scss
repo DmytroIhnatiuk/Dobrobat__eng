@@ -36,6 +36,7 @@ html {
 
 body {
 	margin: 0;
+	font-family: 'Inter';
 	font-size: var(--txt-m);
 	line-height: normal;
 	counter-reset: var(--black);
@@ -193,7 +194,6 @@ a {
 	color: inherit;
 	text-decoration: none;
 	display: inline-block;
-	transition: all 0.35s linear;
 	&:visited {
 		text-decoration: none;
 	}
